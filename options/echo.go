@@ -24,6 +24,7 @@ func (e *EchoHandler) OptionCode() byte {
 func (e *EchoHandler) Offer(c *telnet.Connection) {
 	if !e.client {
 		c.Conn.Write([]byte{telnet.IAC, telnet.WILL, e.OptionCode()})
+		c.Conn.Write([]byte{telnet.IAC, telnet.DONT, e.OptionCode()})
 	}
 }
 
