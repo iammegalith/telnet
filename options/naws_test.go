@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/aprice/telnet"
-	"github.com/aprice/telnet/options"
+	"github.com/PatrickRudolph/telnet"
+	"github.com/PatrickRudolph/telnet/options"
 )
 
 func TestServerNAWS(t *testing.T) {
