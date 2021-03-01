@@ -1,4 +1,4 @@
-module github.com/aprice/telnet
+module github.com/PatrickRudolph/telnet
 
 go 1.16
 
