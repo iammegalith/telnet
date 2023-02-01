@@ -1,6 +1,6 @@
 package options
 
-import "github.com/PatrickRudolph/telnet"
+import "github.com/iammegalith/telnet"
 
 // TerminalType Telnet Option - https://tools.ietf.org/html/rfc857
 

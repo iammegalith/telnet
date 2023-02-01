@@ -5,7 +5,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/PatrickRudolph/telnet"
+	"github.com/iammegalith/telnet"
 )
 
 func TestConnection_Write(t *testing.T) {

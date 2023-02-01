@@ -1,6 +1,6 @@
 package options
 
-import "github.com/PatrickRudolph/telnet"
+import "github.com/iammegalith/telnet"
 
 // BINARY Telnet binary Option - https://tools.ietf.org/html/rfc857
 

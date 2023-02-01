@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/PatrickRudolph/telnet"
-	"github.com/PatrickRudolph/telnet/options"
+	"github.com/iammegalith/telnet"
+	"github.com/iammegalith/telnet/options"
 )
 
 func TestServerNAWS(t *testing.T) {

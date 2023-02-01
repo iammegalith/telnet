@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PatrickRudolph/telnet"
-	"github.com/PatrickRudolph/telnet/linereader"
-	"github.com/PatrickRudolph/telnet/options"
+	"github.com/iammegalith/telnet"
+	"github.com/iammegalith/telnet/linereader"
+	"github.com/iammegalith/telnet/options"
 )
 
 func main() {
