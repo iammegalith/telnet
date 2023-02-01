@@ -53,6 +53,12 @@ func (n *NAWSHandler) HandleDo(c *telnet.Connection) {
 		go n.monitorTTYSize(c)
 	} else {
 		c.Conn.Write([]byte{telnet.IAC, telnet.WONT, n.OptionCode()})
+		// Check if the incoming connection is ANSI capable
+		if c.OptionNegotiated(telnet.TeloptNAWS) {
+			fmt.Println("Incoming connection supports ANSI")
+		} else {
+			fmt.Println("Incoming connection does not support ANSI")
+		}
 	}
 }
 
