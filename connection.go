@@ -113,6 +113,13 @@ func (c *Connection) Read(b []byte) (n int, err error) {
 }
 
 func (c *Connection) read(b []byte) (n int, err error) {
+	if c.w-c.r >= n {
+		// do not wait for new input when there is enough in the buffer already
+		nn := copy(b[:], c.buf[c.r:c.w])
+		n += nn
+		c.r += nn
+		return
+	}
 	err = c.fill(len(b))
 	if err != nil {
 		return
